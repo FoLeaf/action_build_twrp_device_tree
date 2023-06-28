@@ -19,11 +19,9 @@ jobs:
       
     - name: Prepare the environment
       run: |
-        sed -i 's/security.debian.org/mirror.cse.cuhk.edu.hk/g' /etc/apt/sources.list
-        sed -i 's/deb.debian.org/mirror.cse.cuhk.edu.hk/g' /etc/apt/sources.list
         sudo apt-get update
         sudo apt-get upgrade
-        sudo apt -y install python python3 python-pip python3-pip cpio wget
+        sudo apt -y install python3 python-pip python3-pip cpio wget
         pip3 install twrpdtgen
         mkdir dt
       
