@@ -22,7 +22,7 @@ jobs:
         sudo apt-get -y update
         sudo apt-get -y upgrade
         sudo apt install software-properties-common
-        pip3 install -y install python3 python-pip python3-pip cpio wget
+        pip3 install python3 python-pip python3-pip cpio wget
         pip3 install twrpdtgen
         mkdir dt
       
